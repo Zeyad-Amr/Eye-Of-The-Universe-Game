@@ -1,7 +1,8 @@
-import 'package:client/cards/filpped_cards.dart';
-import 'package:client/discovery/discoveryData.dart';
-import 'package:client/discovery/disovery.dart';
-import 'package:client/puzzle.dart';
+import 'package:client/games/cards/filpped_cards.dart';
+import 'package:client/games/discovery/discoveryData.dart';
+import 'package:client/games/discovery/disovery.dart';
+import 'package:client/games/focus/focus.dart';
+import 'package:client/games/puzzle/puzzle.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -60,6 +61,16 @@ class _HomeState extends State<Home> {
               },
               child: const Text(
                 "Start flipped cards",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const FocusWidget()),
+                );
+              },
+              child: const Text(
+                "Start focus",
               ),
             ),
           ],

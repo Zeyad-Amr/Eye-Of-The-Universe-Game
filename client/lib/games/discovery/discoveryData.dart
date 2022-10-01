@@ -32,7 +32,8 @@ class Data {
       "image": "Stephan's Quintet",
       "jwst": "assets/discovery/jwst_stephan.jpg",
       "hubble": "assets/discovery/hubble_stephan.jpg",
-      "description": "description",
+      "description":
+          "Stephan’s Quintet, a visual grouping of five galaxies, is best known for being prominently featured in the holiday classic film, “It’s a Wonderful Life.” Today, NASA’s James Webb Space Telescope reveals Stephan’s Quintet in a new light. This enormous mosaic is Webb’s largest image to date, covering about one-fifth of the Moon’s diameter. It contains over 150 million pixels and is constructed from almost 1,000 separate image files. The information from Webb provides new insights into how galactic interactions may have driven galaxy evolution in the early universe.",
     },
   ];
 }

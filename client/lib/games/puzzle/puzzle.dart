@@ -161,7 +161,7 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                                 title: widget.title,
                                 desc: widget.description,
                                 btnOkOnPress: () {
-                                  Navigator.of(context).pop();
+                                  // Navigator.of(context).pop();
                                   // Navigator.of(context).pop();
                                 },
 
