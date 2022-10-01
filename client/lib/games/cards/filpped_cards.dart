@@ -1,5 +1,5 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:client/cards/cards_game.dart';
+import 'package:client/games/cards/cards_game.dart';
 import 'package:flutter/material.dart';
 
 class FlippedCards extends StatefulWidget {
