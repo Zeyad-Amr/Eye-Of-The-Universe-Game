@@ -1,4 +1,6 @@
-import 'package:client/provider/filpped_cards.dart';
+import 'package:client/cards/filpped_cards.dart';
+import 'package:client/discovery/discoveryData.dart';
+import 'package:client/discovery/disovery.dart';
 import 'package:client/puzzle.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  Data data = Data();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,11 +24,23 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
+                    builder: (context) => Discovery(data: data.data[0]),
+                  ),
+                );
+              },
+              child: const Text(
+                "Discovery",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
                     builder: (context) => const PuzzleWidget(
                         gridSize: 2,
                         timeInSec: 20,
-                        title: 'End Game',
-                        description: 'Are you sure you want to end the game?'),
+                        title: "Demo",
+                        description: "Description"),
                   ),
                 );
               },
@@ -37,7 +52,7 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const FlippedCards(),
+                    builder: (context) => const FlippedCards(size: 3),
                   ),
                 );
               },

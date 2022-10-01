@@ -109,8 +109,8 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                               headerAnimationLoop: false,
                               dialogType: DialogType.warning,
                               showCloseIcon: true,
-                              title: widget.title,
-                              desc: widget.description,
+                              title: 'End Game',
+                              desc: 'Are you sure you want to end the game?',
                               btnOkOnPress: () {
                                 Navigator.of(context).pop();
                                 // Navigator.of(context).pop();
@@ -145,7 +145,7 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                             image: const AssetImage("assets/images/eu.jpg"),
                             onFinished: () {
                               // ignore: avoid_print
-                              print('finished!');
+                              debugPrint('finished!');
                               setState(() {
                                 finished = true;
                               });
@@ -156,9 +156,8 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                                 headerAnimationLoop: false,
                                 dialogType: DialogType.info,
                                 showCloseIcon: true,
-                                title: 'Demo',
-                                desc:
-                                    'Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here Dialog description here ',
+                                title: widget.title,
+                                desc: widget.description,
                                 btnOkOnPress: () {
                                   Navigator.of(context).pop();
                                   // Navigator.of(context).pop();
@@ -175,7 +174,7 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                             puzzleKey: puzzleKey,
                             onBlockSuccess: () {
                               // ignore: avoid_print
-                              print('block success!');
+                              debugPrint('block success!');
                             },
                           ),
                         ),

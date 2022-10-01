@@ -1,6 +1,4 @@
-import 'package:client/provider/puzzleProv.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'app.dart';
 
@@ -13,18 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => PuzzleProv()),
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'James Webb',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: App(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'James Webb',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: const App(),
     );
   }
 }

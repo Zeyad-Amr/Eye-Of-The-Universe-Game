@@ -2,7 +2,7 @@ import 'package:client/home.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
-  App({Key? key}) : super(key: key);
+  const App({Key? key}) : super(key: key);
 
   @override
   State<App> createState() => _AppState();
