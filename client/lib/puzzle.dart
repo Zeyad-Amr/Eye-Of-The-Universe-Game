@@ -9,13 +9,15 @@ class PuzzleWidget extends StatefulWidget {
   final int gridSize;
   final int timeInSec;
   final String title;
+  final String img;
   final String description;
   const PuzzleWidget(
       {super.key,
       required this.gridSize,
       required this.timeInSec,
       required this.title,
-      required this.description});
+      required this.description,
+      required this.img});
 
   @override
   State<PuzzleWidget> createState() => _PuzzleWidgetState();
@@ -142,7 +144,7 @@ class _PuzzleWidgetState extends State<PuzzleWidget> {
                         Center(
                           child: JigsawPuzzle(
                             gridSize: widget.gridSize,
-                            image: const AssetImage("assets/images/eu.jpg"),
+                            image: AssetImage(widget.img),
                             onFinished: () {
                               // ignore: avoid_print
                               debugPrint('finished!');

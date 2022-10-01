@@ -36,11 +36,13 @@ class _HomeState extends State<Home> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const PuzzleWidget(
-                        gridSize: 2,
-                        timeInSec: 20,
-                        title: "Demo",
-                        description: "Description"),
+                    builder: (context) => PuzzleWidget(
+                      gridSize: 2,
+                      timeInSec: 20,
+                      img: data.data[0]['jwst'],
+                      title: data.data[0]['image'],
+                      description: data.data[0]['description'],
+                    ),
                   ),
                 );
               },
