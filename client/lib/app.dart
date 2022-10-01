@@ -1,4 +1,5 @@
 import 'package:client/home.dart';
+import 'package:client/login.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -11,6 +12,6 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return const Home();
+    return const Login();
   }
 }

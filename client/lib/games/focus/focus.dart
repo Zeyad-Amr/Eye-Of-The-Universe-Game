@@ -1,5 +1,6 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:photo_view/photo_view.dart';
 
 class FocusWidget extends StatefulWidget {
@@ -12,12 +13,29 @@ class FocusWidget extends StatefulWidget {
 }
 
 class _FocusWidgetState extends State<FocusWidget> {
+  // Future<void> getImage(inst, filter) async {
+  //   final response = await http.get(
+  //     Uri.parse(
+  //         'https://protected-dawn-08393.herokuapp.com/imgs?inst=FGS&filter=FGS'),
+  //   );
+  //   debugPrint("response ${response.statusCode}");
+  //   if (response.statusCode == 200) {
+  //     Navigator.of(context).push(MaterialPageRoute(
+  //       builder: (context) => PhotoView(
+  //         imageProvider: NetworkImage(response.body),
+  //       ),
+  //     ));
+  //   } else {
+  //     debugPrint('error');
+  //   }
+  // }
+
   String focusSelected = "";
   String filterSelected = "";
   Map<String, dynamic> itemSelected = {};
   List<Map<String, dynamic>> process = [
     {
-      "inst": "NIRcam",
+      "inst": "NIRCam",
       "filter": ["F200W", "F210M", "F212N", "F444W"],
       'path': "assets/inst/nircam.jpg",
     },
@@ -27,7 +45,7 @@ class _FocusWidgetState extends State<FocusWidget> {
       'path': "assets/inst/Spectrometer.png",
     },
     {
-      "inst": "NIRSPEC",
+      "inst": "NIRSpec",
       "filter": ["F110W"],
       'path': "assets/inst/nirspec.jpg",
     },
@@ -103,6 +121,7 @@ class _FocusWidgetState extends State<FocusWidget> {
                       onTap: () {
                         setState(() {
                           focusSelected = process[i]['inst'];
+                          filterSelected = '';
                           itemSelected = process[i];
                         });
                       },
@@ -115,11 +134,15 @@ class _FocusWidgetState extends State<FocusWidget> {
                                     width: 5, color: Colors.blue),
                             borderRadius: BorderRadius.circular(15)),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        child: Image.asset(
-                          process[i]['path'],
-                          fit: BoxFit.cover,
-                          // width: MediaQuery.of(context).size.width * 0.3,
-                          // height: MediaQuery.of(context).size.width * 0.15,
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              process[i]['path'],
+                              fit: BoxFit.cover,
+                              // width: MediaQuery.of(context).size.width * 0.3,
+                              // height: MediaQuery.of(context).size.width * 0.15,
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -159,13 +182,41 @@ class _FocusWidgetState extends State<FocusWidget> {
                           clipBehavior: Clip.antiAliasWithSaveLayer,
                           child: Container(
                             color: Colors.grey,
-                            child:
-                                Center(child: Text(itemSelected['filter'][i])),
+                            child: Center(
+                                child: Text(
+                              itemSelected['filter'][i],
+                              style: const TextStyle(fontSize: 18),
+                            )),
                           )),
                     ),
                   ),
                 ),
               ),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Divider(),
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    if (focusSelected == '' || filterSelected == '') {
+                      // Fluttertoast.showToast(
+                      //     msg: 'Please select an instrument and a filter!',
+                      //     toastLength: Toast.LENGTH_SHORT,
+                      //     gravity: ToastGravity.TOP,
+                      //     timeInSecForIosWeb: 1,
+                      //     backgroundColor: Colors.grey[800],
+                      //     textColor: Colors.white,
+                      //     fontSize: 16.0);
+                    } else {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => PhotoView(
+                          imageProvider: AssetImage(
+                              'assets/focus/${focusSelected}_$filterSelected.png'),
+                        ),
+                      ));
+                    }
+                  },
+                  child: const Text('Get Image'))
             ],
           ),
         ),

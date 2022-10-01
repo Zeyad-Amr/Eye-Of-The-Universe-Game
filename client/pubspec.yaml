@@ -40,6 +40,9 @@ dependencies:
   flutter_countdown_timer: ^4.1.0
   awesome_dialog: ^3.0.2
   photo_view: ^0.14.0
+  http:
+  fluttertoast: ^8.0.9
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +70,7 @@ flutter:
     - assets/images/
     - assets/inst/
     - assets/discovery/
+    - assets/focus/
     - assets/
 
   #   - images/a_dot_ham.jpeg

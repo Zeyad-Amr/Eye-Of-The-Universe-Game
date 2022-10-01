@@ -17,60 +17,118 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[900],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => Discovery(data: data.data[0]),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15)),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => Discovery(data: data.data[0]),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Discovery",
+                    style: TextStyle(fontSize: 20),
                   ),
-                );
-              },
-              child: const Text(
-                "Discovery",
+                ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => PuzzleWidget(
-                      gridSize: 2,
-                      timeInSec: 20,
-                      img: data.data[0]['jwst'],
-                      title: data.data[0]['image'],
-                      description: data.data[0]['description'],
-                    ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15)),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => PuzzleWidget(
+                          gridSize: 2,
+                          timeInSec: 20,
+                          img: data.data[0]['jwst'],
+                          title: data.data[0]['image'],
+                          description: data.data[0]['description'],
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Puzzle",
+                    style: TextStyle(fontSize: 20),
                   ),
-                );
-              },
-              child: const Text(
-                "Start Puzzle",
+                ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const FlippedCards(size: 3),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15)),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const FlippedCards(size: 3),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Flipped Cards",
+                    style: TextStyle(fontSize: 20),
                   ),
-                );
-              },
-              child: const Text(
-                "Start flipped cards",
+                ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const FocusWidget()),
-                );
-              },
-              child: const Text(
-                "Start focus",
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15)),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (context) => const FocusWidget()),
+                    );
+                  },
+                  child: const Text(
+                    "PSF",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
               ),
             ),
           ],
