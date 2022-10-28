@@ -1,6 +1,12 @@
-<img src="client/assets/logo.png"  width="30%">
+<img src="client/assets/logo.png"  width="30%" align="left">
 <img src="client/assets/nasa.jpg"  width="15%" align="right">
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 # Eye of The Universe
