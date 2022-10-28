@@ -16,15 +16,13 @@
 
 ## Overview
 
-This project is a solution for `Learning Through the Looking Glass` challenge which is to develop a game to help people learn about the `James Webb Space Telescope`’s amazing capabilities.
-
-<br>
+This project is a solution for `Learning Through the Looking Glass` challenge in **Nasa Space Apps Cairo 2022** which is to develop a game to help people learn about the `James Webb Space Telescope`’s amazing capabilities.
 
 > Our game is divided into 4 stations: Discovery, Puzzle Game, Memory Game and PSF, and 5 levels, each level has a new image captured by James Web Telescope to be opened to the player to play with it in the stations.
 
 <img src="client/assets/screenshots/01.jpg"  width="20%"> <img src="client/assets/screenshots/22.jpg"  width="20%">
 
-<br>
+---
 
 ## Stations
 
@@ -56,7 +54,9 @@ This project is a solution for `Learning Through the Looking Glass` challenge wh
 
 <img src="client/assets/screenshots/20.jpg"  width="20%"  > <img src="client/assets/right-arrow.png"  width="20%"  > <img src="client/assets/screenshots/21.jpg"  width="20%"  >
 
-> ## Future Features:
+---
+
+## Future Features:
 
 - Users
 - Adding scores
@@ -68,14 +68,14 @@ This project is a solution for `Learning Through the Looking Glass` challenge wh
 
 ---
 
-> ## Technologies
+## Technologies
 
 - Mobile App > Flutter
 - Backend > Node JS
 
 ---
 
-> ## Team
+## Team
 
 ### **_ASME Stars_** | Nasa Space Apps Cairo 2022
 
