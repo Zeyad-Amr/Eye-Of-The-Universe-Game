@@ -1,15 +1,8 @@
-<img src="client/assets/logo.png"  width="30%"  align="left">
-<img src="client/assets/nasa.jpg"  width="15%"  align="right">
+<img src="client/assets/logo.png"  width="30%">
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-# Eye of The Universe
+# Eye of The Universe Game
 
 ## Table of contents
 
@@ -79,7 +72,7 @@ This project is a solution for `Learning Through the Looking Glass` challenge wh
 
 > ## Technologies
 
-- Mobile > Flutter
+- Mobile App > Flutter
 - Backend > Node JS
 
 ---
