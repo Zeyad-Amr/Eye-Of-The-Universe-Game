@@ -28,9 +28,9 @@ This project is a solution for `Learning Through the Looking Glass` challenge in
 
 - Player discovers an object in space using James Webb Telescope and Hubble Telescope, comparing the capabilities of the two telescopes.
 
-<img src=" screenshots/03.jpg"  width="20%"  > <img src="client/assets/right-arrow.png"  width="20%"  > <img src=" screenshots/04.jpg"  width="20%"  >
+<img src=" screenshots/03.jpg"  width="20%"  > <img src="screenshots/right-arrow.png"  width="20%"  > <img src=" screenshots/04.jpg"  width="20%"  >
 
-<img src=" screenshots/05.jpg"  width="20%"  > <img src="client/assets/right-arrow.png"  width="20%"  > <img src=" screenshots/06.jpg"  width="20%"  >
+<img src=" screenshots/05.jpg"  width="20%"  > <img src="screenshots/right-arrow.png"  width="20%"  > <img src=" screenshots/06.jpg"  width="20%"  >
 
 > ### Puzzle Station
 
@@ -48,9 +48,9 @@ This project is a solution for `Learning Through the Looking Glass` challenge in
 
 - It's a customization in James webb instruments and filters, then the player see the result image.
 
-<img src=" screenshots/18.jpg"  width="20%"  > <img src="client/assets/right-arrow.png"  width="20%"  > <img src=" screenshots/19.jpg"  width="20%"  >
+<img src=" screenshots/18.jpg"  width="20%"  > <img src="screenshots/right-arrow.png"  width="20%"  > <img src=" screenshots/19.jpg"  width="20%"  >
 
-<img src=" screenshots/20.jpg"  width="20%"  > <img src="client/assets/right-arrow.png"  width="20%"  > <img src=" screenshots/21.jpg"  width="20%"  >
+<img src=" screenshots/20.jpg"  width="20%"  > <img src="screenshots/right-arrow.png"  width="20%"  > <img src=" screenshots/21.jpg"  width="20%"  >
 
 ## Future Features:
 
