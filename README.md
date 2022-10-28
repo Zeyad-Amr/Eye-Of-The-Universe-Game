@@ -1,6 +1,4 @@
-<img src="client/assets/logo.png"  width="30%">
-
-<br>
+<img src="client/assets/logo.png"  width="25%">
 
 # Eye of The Universe Game
 
