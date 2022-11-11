@@ -12,6 +12,8 @@
   - [PSF Station](#psf-station)
 - [Future Features](#future-features)
 - [Technologies](#technologies)
+- [Demo](#demo)
+- [Install](#install)
 - [Team](#team)
 
 ## Overview
@@ -67,9 +69,15 @@ This project is a solution for `Learning Through the Looking Glass` challenge in
 - Mobile App > Flutter
 - Backend > Node JS
 
+## Demo
+- https://www.youtube.com/watch?v=HAp57D7kaI8
+
+## Install
+- https://play.google.com/store/apps/details?id=com.eye.of.the.universe.game
+
 ## Team
 
-### **_ASME Stars_** | Nasa Space Apps Cairo 2022
+### **ASME Stars** | Nasa Space Apps Cairo 2022
 
 - Zeyad Amr
 - Mohamed Ismail
